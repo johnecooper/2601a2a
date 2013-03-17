@@ -13,6 +13,7 @@
 		AF13827A16F53F9C004D51B2 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = AF13827216F53F9B004D51B2 /* Event.m */; };
 		AF13827B16F53F9C004D51B2 /* NoEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF13827616F53F9B004D51B2 /* NoEventHandler.m */; };
 		AF13827C16F53F9C004D51B2 /* Reactor.m in Sources */ = {isa = PBXBuildFile; fileRef = AF13827816F53F9C004D51B2 /* Reactor.m */; };
+		AF13827F16F55333004D51B2 /* ReactorThread.m in Sources */ = {isa = PBXBuildFile; fileRef = AF13827E16F55333004D51B2 /* ReactorThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,9 @@
 		AF13827716F53F9B004D51B2 /* Reactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reactor.h; sourceTree = "<group>"; };
 		AF13827816F53F9C004D51B2 /* Reactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reactor.m; sourceTree = "<group>"; };
 		AF13827916F53F9C004D51B2 /* ReactorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactorInterface.h; sourceTree = "<group>"; };
+		AF13827D16F55333004D51B2 /* ReactorThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactorThread.h; sourceTree = "<group>"; };
+		AF13827E16F55333004D51B2 /* ReactorThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactorThread.m; sourceTree = "<group>"; };
+		AF13828016F5570E004D51B2 /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Definitions.h; path = ../Definitions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		AF13826516F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor */ = {
 			isa = PBXGroup;
 			children = (
+				AF13828016F5570E004D51B2 /* Definitions.h */,
 				AF13827116F53F9B004D51B2 /* Event.h */,
 				AF13827216F53F9B004D51B2 /* Event.m */,
 				AF13827316F53F9B004D51B2 /* EventHandler.h */,
@@ -94,6 +99,8 @@
 				AF13827716F53F9B004D51B2 /* Reactor.h */,
 				AF13827816F53F9C004D51B2 /* Reactor.m */,
 				AF13827916F53F9C004D51B2 /* ReactorInterface.h */,
+				AF13827D16F55333004D51B2 /* ReactorThread.h */,
+				AF13827E16F55333004D51B2 /* ReactorThread.m */,
 				AF13826616F53F40004D51B2 /* main.m */,
 				AF13826A16F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor.1 */,
 				AF13826816F53F40004D51B2 /* Supporting Files */,
@@ -164,6 +171,7 @@
 				AF13827A16F53F9C004D51B2 /* Event.m in Sources */,
 				AF13827B16F53F9C004D51B2 /* NoEventHandler.m in Sources */,
 				AF13827C16F53F9C004D51B2 /* Reactor.m in Sources */,
+				AF13827F16F55333004D51B2 /* ReactorThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +274,7 @@
 				AF13827016F53F40004D51B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
