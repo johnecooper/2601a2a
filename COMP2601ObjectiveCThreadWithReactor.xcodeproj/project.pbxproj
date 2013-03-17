@@ -10,6 +10,9 @@
 		AF13826416F53F40004D51B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF13826316F53F40004D51B2 /* Foundation.framework */; };
 		AF13826716F53F40004D51B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF13826616F53F40004D51B2 /* main.m */; };
 		AF13826B16F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF13826A16F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor.1 */; };
+		AF13827A16F53F9C004D51B2 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = AF13827216F53F9B004D51B2 /* Event.m */; };
+		AF13827B16F53F9C004D51B2 /* NoEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF13827616F53F9B004D51B2 /* NoEventHandler.m */; };
+		AF13827C16F53F9C004D51B2 /* Reactor.m in Sources */ = {isa = PBXBuildFile; fileRef = AF13827816F53F9C004D51B2 /* Reactor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,15 @@
 		AF13826616F53F40004D51B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF13826916F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "COMP2601ObjectiveCThreadWithReactor-Prefix.pch"; sourceTree = "<group>"; };
 		AF13826A16F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COMP2601ObjectiveCThreadWithReactor.1; sourceTree = "<group>"; };
+		AF13827116F53F9B004D51B2 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		AF13827216F53F9B004D51B2 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		AF13827316F53F9B004D51B2 /* EventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventHandler.h; sourceTree = "<group>"; };
+		AF13827416F53F9B004D51B2 /* EventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSource.h; sourceTree = "<group>"; };
+		AF13827516F53F9B004D51B2 /* NoEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoEventHandler.h; sourceTree = "<group>"; };
+		AF13827616F53F9B004D51B2 /* NoEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoEventHandler.m; sourceTree = "<group>"; };
+		AF13827716F53F9B004D51B2 /* Reactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reactor.h; sourceTree = "<group>"; };
+		AF13827816F53F9C004D51B2 /* Reactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reactor.m; sourceTree = "<group>"; };
+		AF13827916F53F9C004D51B2 /* ReactorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactorInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,15 @@
 		AF13826516F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor */ = {
 			isa = PBXGroup;
 			children = (
+				AF13827116F53F9B004D51B2 /* Event.h */,
+				AF13827216F53F9B004D51B2 /* Event.m */,
+				AF13827316F53F9B004D51B2 /* EventHandler.h */,
+				AF13827416F53F9B004D51B2 /* EventSource.h */,
+				AF13827516F53F9B004D51B2 /* NoEventHandler.h */,
+				AF13827616F53F9B004D51B2 /* NoEventHandler.m */,
+				AF13827716F53F9B004D51B2 /* Reactor.h */,
+				AF13827816F53F9C004D51B2 /* Reactor.m */,
+				AF13827916F53F9C004D51B2 /* ReactorInterface.h */,
 				AF13826616F53F40004D51B2 /* main.m */,
 				AF13826A16F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor.1 */,
 				AF13826816F53F40004D51B2 /* Supporting Files */,
@@ -140,6 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF13826716F53F40004D51B2 /* main.m in Sources */,
+				AF13827A16F53F9C004D51B2 /* Event.m in Sources */,
+				AF13827B16F53F9C004D51B2 /* NoEventHandler.m in Sources */,
+				AF13827C16F53F9C004D51B2 /* Reactor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

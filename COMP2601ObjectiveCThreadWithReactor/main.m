@@ -7,6 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EventHandler.h"
+#import "Reactor.h"
+#import "Event.h"
+
+@interface LoginHandler : NSObject  <EventHandler>
+@end
+@implementation LoginHandler
+-(void)handleEvent:(Event*) e{
+    NSLog(@"Login Event Handled");
+}
+@end
 
 int main(int argc, const char * argv[])
 {
@@ -14,7 +25,14 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         // insert code here...
-        NSLog(@"Hello, World!");
+        LoginHandler *h = [[LoginHandler alloc]init];
+        Reactor *r = [[Reactor alloc ]init];
+        [r registerHandler:(EventHandler*)h forType:@"login"];
+        
+        Event* e = [[Event alloc]initWithType:@"login"];
+        [r dispatch:e];
+        
+       // NSLog(@"Hello, World!");
         
     }
     return 0;
