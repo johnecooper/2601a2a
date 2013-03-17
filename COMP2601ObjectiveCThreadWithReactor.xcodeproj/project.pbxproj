@@ -47,9 +47,9 @@
 		AF13827916F53F9C004D51B2 /* ReactorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactorInterface.h; sourceTree = "<group>"; };
 		AF13827D16F55333004D51B2 /* ReactorThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactorThread.h; sourceTree = "<group>"; };
 		AF13827E16F55333004D51B2 /* ReactorThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactorThread.m; sourceTree = "<group>"; };
-		AF13828016F5570E004D51B2 /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Definitions.h; path = ../Definitions.h; sourceTree = "<group>"; };
 		AF7E73F716F6373500488A2B /* COMP2601ObjectiveCThreadWithReactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMP2601ObjectiveCThreadWithReactor.h; sourceTree = "<group>"; };
 		AF7E73F816F6373700488A2B /* COMP2601ObjectiveCThreadWithReactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMP2601ObjectiveCThreadWithReactor.m; sourceTree = "<group>"; };
+		AF7E73FA16F63A1200488A2B /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		AF13826516F53F40004D51B2 /* COMP2601ObjectiveCThreadWithReactor */ = {
 			isa = PBXGroup;
 			children = (
-				AF13828016F5570E004D51B2 /* Definitions.h */,
+				AF7E73FA16F63A1200488A2B /* Definitions.h */,
 				AF13827116F53F9B004D51B2 /* Event.h */,
 				AF13827216F53F9B004D51B2 /* Event.m */,
 				AF13827416F53F9B004D51B2 /* EventSource.h */,
