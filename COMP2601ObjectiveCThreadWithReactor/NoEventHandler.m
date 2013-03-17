@@ -9,11 +9,4 @@
 #import "NoEventHandler.h"
 
 @implementation NoEventHandler
--(void)raise{
-    NSException *e;
-    e=[NSException exceptionWithName:@"No Event Handler Exception" reason:@"No handler for the event was found." userInfo:nil];
-    [e raise];
-    
-}
-
 @end

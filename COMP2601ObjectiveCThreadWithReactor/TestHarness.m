@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 John Cooper. All rights reserved.
 //
 
+//TestHarness: Tests the handling capabilities.
+
 
 
 #import <Foundation/Foundation.h>
@@ -14,13 +16,6 @@
 #import "Event.h"
 #import "Definitions.h"
 
-@interface LoginHandler : NSObject  <EventHandler>
-@end
-@implementation LoginHandler
--(void)handleEvent:(Event*) e{
-    NSLog(@"Login Event Handled");
-}
-@end
 
 @interface TestHandler : NSObject <EventHandler>
 @end
@@ -35,20 +30,13 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        LoginHandler *lH = [[LoginHandler alloc]init];
         TestHandler *tH = [[TestHandler alloc]init];
-        
         ReactorThread *r = [[ReactorThread alloc ]init];
-        [r registerHandler:(EventHandler*)lH forType:@"login"];
         [r registerHandler:(EventHandler*)tH forType:@"test"];
         
         Event* e1 = [[Event alloc]initWithType:@"test"];
-        Event* e2 = [[Event alloc]initWithType:@"login"];
-        Event* e3 = [[Event alloc]initWithType:@"test"];
         
         [r dispatch:e1];
-        [r dispatch:e2];
-        [r dispatch:e3];
 
     }
     return 0;

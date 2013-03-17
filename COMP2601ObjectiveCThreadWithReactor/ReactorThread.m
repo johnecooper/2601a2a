@@ -47,20 +47,17 @@
     while(running){
         Event *e = [eventSource getEvent];
         if(e!=NULL){
-            @try{
-                [reactor dispatch:e];
-            }
-            @catch (NoEventHandler* e){
-#ifdef VERBOSE
-                NSLog(@"NoEventHandler exception caught.");
+            if(![reactor dispatch:e]){
+                    //Error Handling
+            #ifdef VERBOSE
+                NSLog(@"ReactorThread: Handle Failed.");
+            #endif
+#ifdef QUIT_ON_HANDLE_ERROR
+                NSLog(@"Break On handle Error defined, stopping run.");
+                running=false;
+                break;
 #endif
             }
-        }
-        else{
-#ifdef VERBOSE
-            NSLog(@"ReactorThread: Null event.\n        Stopping run.");
-#endif
-            running=false;
         }
     }
 }

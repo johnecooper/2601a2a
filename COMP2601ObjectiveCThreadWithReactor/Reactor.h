@@ -15,6 +15,6 @@
 }
 -(void)registerHandler:(EventHandler*)handler forType:(NSString*)type;
 -(void)deregisterHandler:(NSString*)type;
--(void)dispatch:(Event*)e;
+-(Boolean)dispatch:(Event*)e;
 
 @end
